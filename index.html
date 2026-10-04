@@ -7,9 +7,14 @@
     
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="static/ncs/ncs.ico" />
-    
-    <!-- Font Awesome icons (free version)-->
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!--local files -->
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/slider.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/styles1.css">
+
+    <script src="static/js/menu.js"></script>
+    <script src="static/js/sidebar.js"></script>
 
     <!-- Simple line icons https://simplelineicons.github.io/-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />    
@@ -17,126 +22,15 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" /> 
     <!-- 1. Bootstrap CSS Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!--<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"> need have more information and before adding-->  
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- 2. Bootstrap JavaScript Bundle Link (Optional but needed for dropdowns, modals, etc.) !!! heavy
     <script src="https://jsdelivr.net"></script>-->
-
-    <!--local files -->
-    <script src="static/js/menu.js"></script>
-    <script src="static/js/sidebar.js"></script>
-
-    <link rel="stylesheet" href="static/css/styles.css">
-    <link rel="stylesheet" href="static/css/styles1.css">
-    
-    <style>
-        :root {
-            --primary-color: #1a365d;
-            --secondary-color: #2b6cb0;
-            --accent-color: #319795;
-            --text-color: #2d3748;
-            --bg-color: #f7fafc;
-        }
-        
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-        }
-
-        header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: #fff;
-            padding: 3rem 1rem;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 0 1.5rem;
-        }
-
-        section {
-            background: #fff;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-
-        h2 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 0.5rem;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .card {
-            background: var(--bg-color);
-            padding: 1.5rem;
-            border-radius: 6px;
-            border-left: 4px solid var(--accent-color);
-            transition: transform 0.2s;
-        }
-
-        .card:hover {
-            transform: translateY(-3px);
-        }
-
-        .partners-list {
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            margin-top: 1rem;
-        }
-
-        .partners-list li {
-            background: #edf2f7;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-weight: bold;
-            color: var(--primary-color);
-        }
-
-        footer {
-            background: var(--primary-color);
-            color: #fff;
-            text-align: center;
-            padding: 2rem 1rem;
-            margin-top: 4rem;
-            font-size: 0.9rem;
-        }
-
-        .info-meta {
-            margin-top: 1rem;
-            font-size: 0.9rem;
-            color: #edf2f7;
-        }
-    </style>
 </head>
 <body id="page-top">
     <!-- Navigation -->
@@ -155,54 +49,255 @@
     </nav>
     <header class="masthead d-flex flex-column align-items-center" style="-webkit-user-select: none;-ms-user-select: none;user-select: none;">
         <div class="container-fluid mb-3 px-lg-5 text-center hero-shell">
-            <img src="stageone_logo.png" alt="StageOne Multi-Services Logo" style="width: 150px; margin-bottom: 20px;">
+            <img src="static/images/stageone_logo.png" alt="StageOne Multi-Services Logo" style="width: 150px; margin-bottom: 20px;">
             <h1>StageOne Multi-Services</h1>
             <p>Une entreprise dynamique, polyvalente et axée sur la satisfaction du client</p>
             <!--<div class="info-meta">
                 Matricule Fiscal : 
             </div>-->     
-    
         </div>
-        <div class="container-fluid flex-fill ">
-            
-                <div class="row d-flex h-100 mx-auto text-white text-center " style="-webkit-user-select: none;-ms-user-select: none;user-select: none;">
+        <div class="container-fluid  flex-fill ">
+            <div class="row d-flex h-100 mx-auto text-white text-center  " style="-webkit-user-select: none;-ms-user-select: none;user-select: none;">
+                <div class="col-lg-8 d-flex flex-column p-3 mx-auto ">
+                    <div class="container-fluid pt-3 border-top"><h4><strong>Services</strong></h4></div>
+                    <div class="container-fluid flex-fill p-3 border-bottom">
 
-                    <div class="col-lg-8 d-flex flex-column p-3 mx-auto">
-                        <div class="container-fluid"><h4><strong>Title</strong></h4></div>
-                        <div class="container-fluid flex-fill">
-                            <!--Carousel-->
+                        <!-- Slideshow container -->
+                        <div class="slideshow-container">
 
-                        </div>                   
-                        <div class="container-fluid hero-actions mt-auto ">
-                            <a class="btn btn-primary btn-xl hero-btn-primary" href="#about">Find Out More</a>
-                            <!--
-                            <a class="btn btn-outline-light btn-xl hero-btn-secondary" href="contact.html">Request a Survey</a>
-                            -->
-                        </div>   
-                    </div>
-                    <div class="col-lg-3 h-100 d-flex flex-column p-3 rounded-4 setborder mx-auto">
-                        <div class="px-4 px-lg-5 text-center hero-shell ">
-                            <div class="hero-panel text-white" style="-webkit-user-select: none;-ms-user-select: none;user-select: none;">
+                            <!-- Full-width images with number and caption text--> 
+                            <div class="mySlides fade" >
+                                <div class="numbertext">1 / 3</div>
+                                <div class="d-flex w-100">
+                                    <a class="mx-auto" href="#services"><img src="static/images/nettoyage_Jardinage.svg" class="img-fluid img-slide" ></a> 
+                                    <a class="mx-auto" href="#services"><img src="static/images/graphic_design.svg" class="img-fluid img-slide" ></a> 
+                                    <a class="mx-auto" href="#services"><img src="static/images/electricite_ plomberie.svg" class="img-fluid img-slide" ></a> 
+                                    <a class="mx-auto" href="#services"><img src="static/images/printing.svg" class="img-fluid img-slide" ></a>                                   
+                                </div>
 
-                                <ul class="hero-metrics">
-                                    <li><strong>15+</strong><span>Years of service</span></li>
-                            
-                                    <li><strong>100%</strong><span>Client focus</span></li>
-                                </ul>
-                                
+                                <div class="text">Caption Text</div>
                             </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 3</div>
+                                <div class="d-flex w-100">
+                                    <span class="mx-auto" ><img src="static/images/slide_none250.svg" class="img-fluid" ></span>
+                                    <a class="mx-auto" href="#services"><img src="static/images/printing.svg" class="img-fluid img-slide" ></a> 
+                                    <a class="mx-auto" href="#services"><img src="static/images/printing.svg" class="img-fluid img-slide" ></a> 
+                                    <span class="mx-auto" ><img src="static/images/slide_none250.svg" class="img-fluid" ></span>                                   
+                                </div>
+                                <div class="text">Caption Two</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 3</div>
+                                <div class="d-flex w-100">
+                                    <span class="mx-auto"><img src="static/images/slide_none125.svg" class="img-fluid" ></span>
+                                    <a class="mx-auto" href="#services"><img src="static/images/printing.svg" class="img-fluid img-slide" ></a>
+                                    <a class="mx-auto" href="#services"><img src="static/images/printing.svg" class="img-fluid img-slide" ></a> 
+                                    <a class="mx-auto" href="#services"><img src="static/images/printing.svg" class="img-fluid img-slide" ></a> 
+                                    <span class="mx-auto"><img src="static/images/slide_none125.svg" class="img-fluid" ></span>                                
+                                </div>
+                                <div class="text">Caption Three</div>
+                            </div>
+                        
+                            <!-- Next and previous buttons 
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>-->
                         </div>
-                        <div class="d-flex px-4 px-lg-5 text-center hero-shell mt-auto">
-                            <div class="hero-panel text-white" style="-webkit-user-select: none;-ms-user-select: none;user-select: none;">
-                                <span class="eyebrow">Trusted IT Infrastructure Partner</span>
-                                <p class="hero-copy">We design, deploy, and support reliable digital infrastructure for schools, businesses, and growing organizations.</p>
+
+                        <!-- The dots/circles -->
+                        <div class="text-center pt-3">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+
+                        <!--
+                        <div class="slider-container">
+                            
+                            <div class="slider-track" id="track">
+                                
+                                <div class="card flex-shrink-0 m-1" style="width: 14rem;">
+                                    <img src="static/images/printing.svg" class="img-fluid card-img-top" alt="...">
+                                    <div class="card-content">Card 1</div>
+                                </div>
+                                <div class="card flex-shrink-0 m-1" style="width: 14rem;">
+                                    <img src="static/images/printing.svg" class="img-fluid card-img-top" alt="...">
+                                    <div class="card-content">Card 2</div>
+                                </div>
+                                <div class="card flex-shrink-0 m-1" style="width: 14rem;">
+                                    <img src="static/images/printing.svg" class="img-fluid card-img-top" alt="...">
+                                    <div class="card-content">Card 3</div>
+                                </div>
+                                <div class="card flex-shrink-0 m-1" style="width: 14rem;">
+                                    <img src="static/images/printing.svg" class="img-fluid card-img-top" alt="...">
+                                    <div class="card-content">Card 4</div>
+                                </div>
+                                <div class="card flex-shrink-0 m-1" style="width: 14rem;">
+                                    <img src="static/images/printing.svg" class="img-fluid card-img-top" alt="...">
+                                    <div class="card-content">Card 5</div>
+                                </div>
+                                <div class="card flex-shrink-0 m-1" style="width: 14rem;">
+                                    <img src="static/images/printing.svg" class="img-fluid card-img-top" alt="...">
+                                    <div class="card-content">Card 6</div>
+                                </div>                                    
+
+                                <div class="card flex-shrink-0 m-1" style="width: 14rem;">
+                                    <img src="static/images/printing.svg" class="img-fluid card-img-top" alt="...">
+                                    <div class="card-content">Card 1</div>
+                                </div>                                    
+                                <div class="card flex-shrink-0 m-1" style="width: 14rem;">
+                                    <img src="static/images/printing.svg" class="img-fluid card-img-top" alt="...">
+                                    <div class="card-content">Card 3</div>
+                                </div>
+                                <div class="card flex-shrink-0 m-1" style="width: 14rem;">
+                                    <img src="static/images/printing.svg" class="img-fluid card-img-top" alt="...">
+                                    <div class="card-content">Card 3</div>
+                                </div>                                    
                             </div>
+                        </div>-->
+
+                        <!--
+                        <div class="d-flex flex-row flex-nowrap gap-3 p-3 overflow-x-scroll">
+                            <div class="card flex-shrink-0" style="width: 14rem;">
+                                <img src="static/images/printing.svg" class="img-fluid card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Card link</a>
+                                
+                                </div>
+                            </div>   
+                            <div class="card flex-shrink-0" style="width: 14rem;">
+                                <img src="static/images/printing.svg" class="img-fluid card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Card link</a>
+                                
+                                </div>
+                            </div>  
+                            <div class="card flex-shrink-0" style="width: 14rem;">
+                                <img src="static/images/printing.svg" class="img-fluid card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Card link</a>
+                                
+                                </div>
+                            </div>  
+                            <div class="card flex-shrink-0" style="width: 14rem;">
+                                <img src="static/images/printing.svg" class="img-fluid card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Card link</a>
+                                
+                                </div>
+                            </div>                                                                                                                           
+                        </div>
+                        -->
+        
+                        <!--Carousel
+                        <div id="carouselExampleAutoplaying" class="carousel slide pointer-event" data-bs-ride="carousel">
+                            <div class="carousel-indicators bg-secondary bg-opacity-10">
+                                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <svg aria-label="Placeholder: First slide" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" height="500" preserveAspectRatio="xMidYMid slice" role="img" width="800" xmlns="http://www.w3.org/2000/svg">
+
+                                        
+                                        <title>Placeholder</title>
+                                        <rect width="100%" height="100%" fill="#777"></rect>
+                                        <text class="fs-1" x="50%" y="50%" fill="#555" dy=".3em">Stage One First slide</text>
+                                    
+                                        <a class="mx-auto" href="#services"><image href="static/images/printing.svg" x="0" y="0" width="350" height="500" /></a>
+                                        <a class="mx-auto" href="#services"><image href="static/images/printing.svg" x="360" y="0" width="350" height="500" /></a>
+                                        <a class="mx-auto" href="#services"><image href="static/images/printing.svg" x="720" y="0" width="350" height="500" /></a>
+                                        
+                                    </svg>
+                                </div>
+                                <div class="carousel-item">
+                                    <svg aria-label="Placeholder: Second slide" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" height="500" preserveAspectRatio="xMidYMid slice" role="img" width="800" xmlns="http://www.w3.org/2000/svg">
+                                        <title>Placeholder</title>
+                                        <rect width="100%" height="100%" fill="#ffffff"></rect>
+                                        <text class="fs-1" x="50%" y="50%" fill="#444" dy=".3em">Second slide</text>
+                                    </svg>
+                                </div>
+                                <div class="carousel-item">
+                                    <svg aria-label="Placeholder: Third slide" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" height="500" preserveAspectRatio="xMidYMid slice" role="img" width="800" xmlns="http://www.w3.org/2000/svg">
+                                        <title>Placeholder</title>
+                                        <rect width="100%" height="100%" fill="#555"></rect>
+                                        <text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text>
+                                    </svg>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>-->
+                    </div>                   
+                    <div class="container-fluid hero-actions p-3 mt-auto ">
+                        <a class="btn btn-primary btn-xl hero-btn-primary" href="#a-propos">En savoir plus</a>
+                        <!--
+                        <a class="btn btn-outline-light btn-xl hero-btn-secondary" href="contact.html">Request a Survey</a>
+                        -->
+                    </div>   
+                </div>
+                <div class="col-lg-3 d-flex flex-column p-0 rounded-4 setborder mx-auto">
+                    <div class="px-4 px-lg-5 text-center hero-shell ">
+                        <div class="hero-panel text-white" style="-webkit-user-select: none;-ms-user-select: none;user-select: none;">
+                            <img class="img-fluid" src="static/images/certified.svg" height="200px">
+                            <ul class="hero-metrics">
+                                <li><strong>+15</strong><span>Années de service</span></li>
+                        
+                                <li><strong>100%</strong><span>Orientation client</span></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <div class="d-flex p-0 text-center hero-shell mt-auto">
+                        <div class="hero-panel text-white p-3" style="-webkit-user-select: none;-ms-user-select: none;user-select: none;">
+                            <span class="eyebrow">Partenaire fiable</span>
+                            <p class="hero-copy p-0">Nous vous accompagnons efficacement dans la réussite de vos projets d'acquisition, de réseaux, de formation et de maintenance</p>
                         </div>
                     </div>
                 </div>
-           
+            </div>
         </div>
-
     </header>
 
     <div class="container">
@@ -283,5 +378,7 @@
     </footer>
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+
+    <script src="static/js/slider.js"></script>
 </body>
 </html>
