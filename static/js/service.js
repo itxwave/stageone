@@ -11,13 +11,17 @@ document.addEventListener('DOMContentLoaded', function () {
     service_cards.forEach(element => {
         element.addEventListener('click', element => {
             // get element
-            const myelement = element.target;
+            //const myelement = element.target;
             // get innehtml
-            const innerhtml = myelement.innerHTML;
+            //const innerhtml = myelement.innerHTML;
             console.log(element.target.dataset.info);
             informations_list.forEach(ele => {ele.style.display = "none";})
             const info = document.querySelector("#" + element.target.dataset.info);
             info.style.display = "block";
+            info.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
         });
     });
     /*service_cards.addEventListener('mouseover', element => {
