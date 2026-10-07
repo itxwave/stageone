@@ -33,7 +33,8 @@
 
     <script src="static/js/menu.js"></script>
     <script src="static/js/sidebar.js"></script>
-    
+    <script src="static/js/service.js"></script>
+
 </head>
 <body id="page-top">
     <!-- Navigation -->
@@ -51,7 +52,7 @@
         </ul>
     </nav>
     <header class="masthead d-flex flex-column align-items-center" style="-webkit-user-select: none;-ms-user-select: none;user-select: none;">
-        <div class="container-fluid mb-3 px-lg-5 text-center hero-shell border-bottom">
+        <div class="container-fluid mb-3 px-lg-5 text-center hero-shell">
             <div class="d-flex">
                 <span class="d-flex mx-auto">
                     <img src="static/images/stageone_logo_1.png" alt="StageOne Multi-Services Logo" style="width: 55px; margin-bottom: 5px;">
@@ -59,7 +60,7 @@
                 </span>        
             </div>
 
-            <p>Une entreprise dynamique, polyvalente et axée sur la satisfaction du client</p>
+            
             <!--<div class="info-meta">
                 Matricule Fiscal : 
             </div>-->     
@@ -78,9 +79,9 @@
                                 <div class="numbertext">1 / 3</div>
                                 <div class="d-flex w-100">
                                     <span class="mx-auto"><img src="static/images/slide_none50.svg" class="img-fluid" ></span>
-                                    <a class="mx-auto" href="#services"><img src="static/images/IT_Infrastructure_reseau.svg" class="img-fluid img-slide" ></a>
-                                    <a class="mx-auto" href="#services"><img src="static/images/impression_communication.svg" class="img-fluid img-slide" ></a> 
-                                    <a class="mx-auto" href="#services"><img src="static/images/construction_maintenance.svg" class="img-fluid img-slide" ></a> 
+                                    <a class="mx-auto" href="#services" data-info="IT-Infrastructure"><img src="static/images/IT_Infrastructure_reseau.svg" class="img-fluid img-slide" ></a>
+                                    <a class="mx-auto" href="#services" data-info="Impression"><img src="static/images/impression_communication.svg" class="img-fluid img-slide" ></a> 
+                                    <a class="mx-auto" href="#services" data-info="Construction"><img src="static/images/construction_maintenance.svg" class="img-fluid img-slide" ></a> 
                                     <span class="mx-auto"><img src="static/images/slide_none50.svg" class="img-fluid" ></span>                                
                                 </div>
                                 <div class="text">Caption Three</div>
@@ -313,6 +314,7 @@
                         </div>-->
                     </div>                   
                     <div class="container-fluid  p-1 mt-auto ">
+                        <p>Une entreprise dynamique, polyvalente et axée sur la satisfaction du client</p>
                         <div class="hero-actions">
                             <a class="btn btn-primary btn-xl hero-btn-primary" href="#a-propos">En savoir plus</a>
                         </div>
@@ -367,18 +369,155 @@
             <h2>Nos Domaines de Placement & Services</h2>
             <p class="fs-2 text-center">Nous intervenons de manière spécialisée dans une variété de domaines complémentaires pour répondre à vos besoins professionnels et individuels :</p>
             
-            <div class="grid">
-                <div class="card"><h3>Administration & bureautique</h3></div>
-                <div class="card"><h3>Bâtiment & travaux publics (BTP)</h3></div>
-                <div class="card"><h3>Électricité & plomberie</h3></div>
-                <div class="card"><h3>Réseaux informatiques & câblage</h3></div>
-                <div class="card"><h3>Service de multimédia aux écoles</h3></div>
-                <div class="card"><h3>Transport & logistique</h3></div>
-                <div class="card"><h3>Service traiteur & hôtellerie</h3></div>
-                <div class="card"><h3>Communication & marketing</h3></div>
-                <div class="card"><h3>Vente & distribution</h3></div>
-                <div class="card"><h3>Nettoyage & Jardinage</h3></div>
-                <div class="card"><h3>Fumigation & dératisation</h3></div>
+            <div class="row d-felx">
+                <div class="col-lg-6 grid mb-3">
+                    <div class="card service-card" data-info="IT-Infrastructure">IT & Infrastructure réseau</div>
+                    <div class="card service-card" data-info="Impression">Impression & Communication</div>
+                    <div class="card service-card" data-info="Construction">Construction, BTP & Maintenance</div>
+                                       
+                    <div class="card service-card" data-info="Transport">Transport & Logistique</div>
+                    <div class="card service-card" data-info="Hygiene">Hygiène, Assainissement & Pest Control</div>
+                    <div class="card service-card" data-info="Placement">Placement & Ressources humaines</div>
+                    
+                    <div class="card service-card" data-info="Fourniture">Fourniture & Procurement</div>                    
+                    <div class="card service-card" data-info="Formation">Formation & Renforcement des capacités</div>                   
+                    <div class="card service-card" data-info="Accompagnement">Accompagnement Psychosocial & Bien-être</div>                  
+                </div>
+                <div class="col-lg-6 information">
+                    <div id="IT-Infrastructure" class="info-list">
+                        <ol class=" list-group list-group-flush">
+                            <h3>IT & Infrastructure réseau</h3>
+                            <li class="list-group-item">Installation de réseaux LAN/WAN</li>
+                            <li class="list-group-item">Câblage structuré</li>
+                            <li class="list-group-item">Wi-Fi professionnel</li>
+                            <li class="list-group-item">Routing & Switching</li>
+                            <li class="list-group-item">Maintenance informatique</li>
+                            <li class="list-group-item">Serveurs et équipements réseau</li>
+                            <li class="list-group-item">CCTV / vidéosurveillance</li>
+                            <li class="list-group-item">Installation et configuration</li>
+                            <li class="list-group-item">Support technique</li>
+                        </ol>                         
+                    </div>
+                    <div id="Impression" class="info-list">
+                        <ol class=" list-group list-group-flush">
+                            <h3>Impression & Communication</h3>
+                            <li class="list-group-item">Impression numérique</li>
+                            <li class="list-group-item">Impression grand format</li>
+                            <li class="list-group-item">Flyers</li>
+                            <li class="list-group-item">Brochures</li>
+                            <li class="list-group-item">Affiches</li>
+                            <li class="list-group-item">Cartes professionnelles</li>
+                            <li class="list-group-item">Supports institutionnels</li>
+                            <li class="list-group-item">Conception graphique</li>
+                            <li class="list-group-item">Branding</li>
+                            <li class="list-group-item">Photographie</li>
+                            <li class="list-group-item">Vidéographie</li>
+                        </ol>                         
+                    </div>
+                    <div id="Construction" class="info-list">
+                        <ol class=" list-group list-group-flush">
+                            <h3>Construction, BTP & Maintenance</h3>
+                            <li class="list-group-item">Construction</li>
+                            <li class="list-group-item">Réhabilitation</li>
+                            <li class="list-group-item">Rénovation</li>
+                            <li class="list-group-item">Aménagement</li>
+                            <li class="list-group-item">Électricité</li>
+                            <li class="list-group-item">Plomberie</li>
+                            <li class="list-group-item">Maintenance technique</li>
+                            <li class="list-group-item">Travaux de bâtiment</li>
+                        </ol>
+                    </div>
+
+                    <div id="Transport" class="info-list">
+                        <ol class=" list-group list-group-flush">
+                            <h3>Transport & Logistique</h3>
+                            <li class="list-group-item">Transport de marchandises</li>
+                            <li class="list-group-item">Livraison</li>
+                            <li class="list-group-item">Distribution</li>
+                            <li class="list-group-item">Gestion de stocks</li>
+                            <li class="list-group-item">Gestion d'entrepôts</li>
+                            <li class="list-group-item">Transport d'équipements sensibles</li>
+                            <li class="list-group-item">Logistique événementielle</li>
+                        </ol>
+                    </div>
+                    <div id="Hygiene" class="info-list">
+                        <ol class=" list-group list-group-flush">
+                            <h3>Hygiène, Assainissement & Pest Control</h3>
+                            <li class="list-group-item">Nettoyage professionnel</li>
+                            <li class="list-group-item">Désinfection</li>
+                            <li class="list-group-item">Fumigation</li>
+                            <li class="list-group-item">Dératisation</li>
+                            <li class="list-group-item">Gestion des déchets</li>
+                            <li class="list-group-item">Entretien des espaces verts</li>
+                            <li class="list-group-item">Jardinage</li>
+                        </ol>
+                    </div>
+                    <div id="Placement" class="info-list">
+                        <ol class=" list-group list-group-flush">
+                            <h3>Placement & Ressources humaines</h3>
+                            <li class="list-group-item">Personnel administratif</li>
+                            <li class="list-group-item">Réceptionnistes</li>
+                            <li class="list-group-item">Assistants administratifs</li>
+                            <li class="list-group-item">Agents de nettoyage</li>
+                            <li class="list-group-item">Jardiniers</li>
+                            <li class="list-group-item">Techniciens</li>
+                            <li class="list-group-item">Personnel logistique</li>
+                            <li class="list-group-item">Personnel de soutien</li>
+                            <li class="list-group-item">Sélection et présélection</li>
+                            <li class="list-group-item">Mise à disposition de personnel</li>
+                            <li class="list-group-item">Suivi des missions</li>
+                        </ol>
+                    </div>
+
+                    <div id="Fourniture" class="info-list">
+                        <ol class=" list-group list-group-flush">
+                            <h3>Fourniture & Procurement</h3>
+                            <li class="list-group-item">Fournitures de bureau</li>
+                            <li class="list-group-item">Matériel informatique</li>
+                            <li class="list-group-item">Équipements électriques</li>
+                            <li class="list-group-item">Équipements solaires</li>
+                            <li class="list-group-item">Produits d'entretien</li>
+                            <li class="list-group-item">Matériel médical</li>
+                            <li class="list-group-item">Équipements de sécurité</li>
+                            <li class="list-group-item">Pièces détachées</li>
+                            <li class="list-group-item">Fourniture sur spécification technique</li>
+                            <li class="list-group-item">Approvisionnement local</li>
+                            <li class="list-group-item">Livraison</li>
+                        </ol>
+                    </div>
+                    <div id="Formation" class="info-list">
+                        <ol class=" list-group list-group-flush">
+                            <h3>Formation & Renforcement des capacités</h3>
+                            <li class="list-group-item">Formation en informatique et bureautique : Word, Excel, PowerPoint, outils numériques,</li>
+                            <li class="list-group-item">gestion documentaire, etc.</li>
+                            <li class="list-group-item">Communication professionnelle et accueil ;</li>
+                            <li class="list-group-item">Gestion administrative et organisation du travail ;</li>
+                            <li class="list-group-item">Gestion des ressources humaines ;</li>
+                            <li class="list-group-item">Entrepreneuriat et gestion d’entreprise ;</li>
+                            <li class="list-group-item">Leadership et développement des compétences managériales ;</li>
+                            <li class="list-group-item">Travail en équipe et gestion des conflits ;</li>
+                            <li class="list-group-item">Santé, sécurité et bonnes pratiques en milieu professionnel ;</li>
+                            <li class="list-group-item">Hygiène, assainissement et environnement ;</li>
+                            <li class="list-group-item">Formation et renforcement des capacités du personnel nouvellement recruté.</li>
+                        </ol>
+                    </div>
+                    <div id="Accompagnement" class="info-list">
+                        <ol class=" list-group list-group-flush">
+                            <h3>Accompagnement Psychosocial & Bien-être</h3>
+                            <li class="list-group-item">Entretiens et consultations individuelles confidentielles ;</li>
+                            <li class="list-group-item">Écoute, orientation et accompagnement psychosocial ;</li>
+                            <li class="list-group-item">Soutien aux personnes confrontées au stress ou à des difficultés personnelles et professionnelles ;</li>
+                            <li class="list-group-item">Accompagnement dans les situations de deuil et de perte ;</li>
+                            <li class="list-group-item">Gestion du stress et prévention de l'épuisement professionnel ;</li>
+                            <li class="list-group-item">Gestion et prévention des conflits en milieu professionnel ;</li>
+                            <li class="list-group-item">Sessions de soutien et d'écoute en groupe ;</li>
+                            <li class="list-group-item">Sensibilisation à la santé mentale et au bien-être ;</li>
+                            <li class="list-group-item">Ateliers sur la gestion des émotions et le bien-être au travail ;</li>
+                            <li class="list-group-item">Accompagnement psychosocial dans les situations difficiles ou traumatiques ;</li>
+                            <li class="list-group-item">Orientation vers des professionnels ou structures spécialisées lorsque nécessaire.</li>
+                        </ol>
+                    </div>
+                </div>                
             </div>
         </section>
 

@@ -52,8 +52,8 @@ function showSlides() {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    if (interval) {stopInterval();}
-    if (timeout) {stopTimeout();}
+    //if (interval) {stopInterval();}
+    //if (timeout) {stopTimeout();}
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}
     slides[slideIndex-1].style.display = "block";
