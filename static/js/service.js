@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // get innehtml
             //const innerhtml = myelement.innerHTML;
             console.log(element.target.dataset.info);
+            
             informations_list.forEach(ele => {ele.style.display = "none";})
             const info = document.querySelector("#" + element.target.dataset.info);
             info.style.display = "block";
