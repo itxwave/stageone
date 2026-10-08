@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
             informations_list.forEach(ele => {ele.style.display = "none";})
             const info = document.querySelector("#" + element.target.dataset.info);
             info.style.display = "block";
+            //const services = document.querySelector('#services');
             info.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'

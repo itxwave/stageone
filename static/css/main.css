@@ -81,6 +81,7 @@ h2 {
     cursor: pointer;  
 }
 
+/*.info-list, #a-propos {*/
 .info-list {
    display: none; 
 }
