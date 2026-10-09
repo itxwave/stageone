@@ -19,6 +19,9 @@ body {
     color: var(--text-color);
     background-color: var(--bg-color);
 }
+.top-bar {
+    background: var(--secondary-color);
+}
 
 header {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -35,6 +38,11 @@ header h1 {
 header p {
     font-size: 1.2rem;
     opacity: 0.9;
+}
+
+.header {
+    background: var(--secondary-color);
+    color: #fff;
 }
 
 .container {
@@ -81,8 +89,7 @@ h2 {
     cursor: pointer;  
 }
 
-/*.info-list, #a-propos {*/
-.info-list {
+.info-list, .apropos-section {
    display: none; 
 }
 
