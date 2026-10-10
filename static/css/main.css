@@ -66,7 +66,7 @@ section {
 #a-propos {
     background-color: rgba(255, 255, 255, 0.9);
     background-image: url(../images/stageone_logo.png);
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
     background-position: center;
     background-size: 70%;
     background-blend-mode: lighten;
