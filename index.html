@@ -59,7 +59,7 @@
 
     <!-- Content dynamically loaded here -->
     <main id="content">
-        <!--<h2>Welcome to the Home Page</h2>-->
+        <!--<h2>Welcome to the Home Page</h2>
         <section class="hero" aria-labelledby="hero-title" style="padding-bottom:0">
             <div class="wrap hero-grid">
                 <div>
@@ -107,10 +107,10 @@
                 <li>UNSOH</li><li>MSF Tabarre</li><li>Miziyel</li><li>Tirais Resto</li><li>Agence Magique des Enfants</li>
             </ul>
             </div>
-        </div>
+        </div>-->
     </main>
 
-    <secondary>
+    <sub>
         <section id="services" aria-labelledby="services-title">
             <div class="wrap">
             <div class="section-head">
@@ -175,7 +175,7 @@
             </div>
             </div>
         </section>       
-    </secondary>
+    </sub>
 
     <dialog id="dlg" aria-labelledby="dlg-title">
         <div class="dlg-head">
@@ -225,26 +225,50 @@
             </div>
             </div>
             <div class="legal">
-            <span>© <span>2011</span><span id="year">2025</span> StageOne Multi-Services. Tous droits réservés.</span>
+            <span>© <span id="start-year">2011</span><span id="year">2025</span> StageOne Multi-Services. Tous droits réservés.</span>
             <a href="https://webmail.itxwave.com/" rel="noopener">Messagerie</a>
             </div>
         </div>
     </footer>
   <script>
+    //document.getElementById("year").textContent=` - ${new Date().getFullYear()}`;
+
     // Load html page into layout
     async function loadPage(pageName) {
-    try {
-        // Look directly inside the "pages" folder for the html file
-        const response = await fetch(`./pages/${pageName}.html`);
-        if (!response.ok) throw new Error('Page not found');
-        
-        const htmlContent = await response.text();
-        document.getElementById('content').innerHTML = htmlContent;
-    } catch (error) {
-        document.getElementById('content').innerHTML = '<h2 style="color:#FCD800; padding: 10px">Error loading page...</h2>';
-    }
+        try {
+            // Look directly inside the "pages" folder for the html file
+            const response = await fetch(`./pages/${pageName}.html`);
+            if (!response.ok) throw new Error('Page not found');
+            
+            const htmlContent = await response.text();
+            document.getElementById('content').innerHTML = htmlContent;
+            
+
+            const start = document.getElementById('start-year').textContent;
+            const end = new Date().getFullYear();
+            const difference = calculateYearDiff(start, end);
+
+            //console.log("year difference:", difference, start, end);
+
+            const yearcounter = document.getElementById('year-counter');
+            if (yearcounter) {
+                yearcounter.textContent = difference;
+            }
+
+        } catch (error) {
+            document.getElementById('content').innerHTML = '<h2 style="color:#FCD800; padding: 10px">Error loading page...</h2>';
+        }
     }
     document.getElementById("year").textContent=` - ${new Date().getFullYear()}`;
+
+    function calculateYearDiff(start, end) {
+        const startYear = parseInt(start, 10);
+        const endYear = parseInt(end, 10);
+
+        const difference = endYear - startYear;
+        return difference;
+
+    }
   </script>
 </body>
 </html>

@@ -62,10 +62,10 @@ section{padding:84px 0}
 @media (max-width:760px){.topbar .addr,.topbar .mail-link{display:none}}
 
 /* Header */
-header{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--line)}
+header{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--primary-color)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:84px;gap:24px}
 .brand{display:flex;align-items:center;gap:14px;text-decoration:none}
-.brand img{height:58px;width:auto}
+.brand img{height:85px;width:auto}
 .brand span{font:700 17px/1.15 var(--head);color:var(--ink)}
 .brand small{display:block;font:500 13px var(--body);color:var(--muted);letter-spacing:0}
 .nav ul{list-style:none;display:flex;gap:34px;margin:0;padding:0}
